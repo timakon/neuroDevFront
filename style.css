@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
 }
+html,body{
+    width: 100%;
+    height: 100%;
+}
 .header_fixed{
     position: fixed;
-    height: 10vh;
+    height: 8vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -12,55 +16,67 @@
     background: #7deedb;
 }
 .header_feature{
-    height: 10vh;
-    /*width: 100vw;*/
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 main{
-    height: 90vh;
+    height: 92vh;
     display: flex;
     flex-direction: row;
 }
 .menu_fixed{
     position: fixed;
-    height: 90vh;
-    min-width:250px;
+    height: 92vh;
+    min-width:300px;
     background: red;
 }
 .menu_feature{
-    width: 250px;
+    width: 300px;
 }
 .content{
-    height: 90vh;
+    height: 92vh;
     width: calc(100% - 250px);
     align-items: center;
 }
 .filling{
-    height: 90vh;
+    height: 88vh;
     width: 80%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items:stretch;
     align-content: stretch;
-    margin: 20px auto;
+    margin: 20px auto 0;
 }
 .card{
-    height: 40%;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width:300px;
     border: 1px solid #000;
     margin: 20px;
+    height: 400px;
+    min-height: 300px;
 }
 .map{
-    height: 30vh;
-    flex-grow: 5;
+    height: 80%;
+    background: #cfcf22;
+    transition: 0.5s;
 }
 .description{
     padding: 10px;
-    flex-grow: 2;
+    height: 20%;
+    background: #abcf26;
+    transition: 0.5s;
+}
+.description:hover{
+    height: 400px;
+    transition: 0.5s;
+}
+.description:hover + .map {
+    opacity: 0;
+    height: 0;
+    transition: 0.5s;
 }
