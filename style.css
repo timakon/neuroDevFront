@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -15,63 +15,38 @@ main{
 .navigation {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: flex-end;
     background: #92bedf;
     margin: 0 0 20px 0;
     flex: 0 0 auto;
 }
 .navigation div {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.menu_link a {
-    padding: 20px;
-    text-decoration: none;
-    display: block;
-    color: #fff;
-    font-size:20px;
-}
-.menu_input{
-    font-size: 17px;
-    border-radius: 12px 0 0 12px;
-    border: none;
-    padding: 4px;
-}
-.search > .menu_button{
-    width: 25px;
-    height: 29px;
-    border-radius: 0 12px 12px 0;
-    padding: 0;
-    background: #fff;
-}
-.menu_button > img{
-    width: 17px;
-    margin: 4px;
-    transform: rotate(90deg);
 }
 .name{
     color: #fff;
     font-size: 20px;
 }
 .avatar > img{
+    padding: 10px;
     height: 40px;
     width: 40px;
-}
-.menu_link:hover {
-    background: #b5c9d8;
+    border-radius: 50%;
 }
 .content{
     height: 92vh;
     width: 100%;
     align-items: center;
+    display: flex;
 }
 .filling{
     height: 88vh;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    flex-shrink: 2;
+    justify-content: space-evenly;
     align-items:stretch;
     margin: 20px auto 0;
 }
@@ -79,15 +54,16 @@ main{
     text-align: left;
     display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-end;
     width:320px;
     height: 320px;
     border: 1px solid #92bedf;
     margin: 20px;
     cursor: pointer;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', sans-serif;
 }
 .map{
-    height: 80%;
+    height: 60%;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -97,7 +73,7 @@ main{
 }
 .description{
     padding: 10px;
-    height: 20%;
+    height: 40%;
     background: #b5c9d8;
     transition: 0.5s;
     overflow: hidden;
@@ -121,4 +97,10 @@ main{
 .description:hover >.headline{
     display: none;
     transition: 0.5s;
+}
+.evaluated{
+    display: flex;
+    height: 88vh;
+    margin: 20px auto 0;
+    flex-shrink: 4;
 }
