@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/timakon/neuroDevFront#readme",
   "dependencies": {
+    "ejs": "^2.6.2",
     "express": "^4.17.1"
   }
 }
