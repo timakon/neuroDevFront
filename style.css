@@ -45,7 +45,7 @@ main{
     height: 88vh;
     display: flex;
     flex-flow: row wrap;
-    flex-shrink: 2;
+    width: 80%;
     justify-content: space-evenly;
     align-items:stretch;
     margin: 20px auto 0;
@@ -98,9 +98,26 @@ main{
     display: none;
     transition: 0.5s;
 }
-.evaluated{
+.evaluateds{
     display: flex;
     height: 88vh;
     margin: 20px auto 0;
-    flex-shrink: 4;
+    width: 20%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.user_evaluated{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.user_evaluated>img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.name_user_evaluated{
+    padding: 10px;
 }
