@@ -6,6 +6,7 @@
 html,body{
     width: 100%;
     height: 100%;
+    max-width: 100%;
 }
 main{
      height: 92vh;
@@ -120,6 +121,7 @@ main{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    cursor: pointer;
 }
 .user_evaluated>img{
     height: 40px;
@@ -219,8 +221,10 @@ input[type=range]:focus::-ms-fill-upper {
     background: #367ebd;
 }
 .sidebar{
-    width: 1200px;
+    width: 0;
     height: 100%;
+    transition: .6s;
+    overflow: hidden;
 }
 .sidebarForm{
     height: 100%;
@@ -228,4 +232,19 @@ input[type=range]:focus::-ms-fill-upper {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.submitButton{
+    background-color: #596994;
+    border:1px solid #586994;
+    padding: 10px 20px 10px 20px ;
+    border-radius:10px;
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    margin-top: -40px;
+}
+.submitButton:hover{
+    background-color: #7282ab;
+    border:1px solid #7282ab;
 }
