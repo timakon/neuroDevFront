@@ -229,3 +229,16 @@ input[type=range]:focus::-ms-fill-upper {
     flex-direction: column;
     align-items: center;
 }
+.submitButton{
+    background-color: #596994;
+    border:1px solid #586994;
+    padding: 10px 20px 10px 20px ;
+    border-radius:10px;
+    color:#fff;
+    font-size:20px;
+    transform: translateX(-50%);
+}
+.submitButton:hover{
+    background-color: #7282ab;
+    border:1px solid #7282ab;
+}
