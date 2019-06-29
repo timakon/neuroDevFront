@@ -29,11 +29,12 @@
 <!--<li>3</li>-->
 <!--</ul>-->
 <main>
+    <% const base64 = 'data:image/png;base64,' %>
     <div class="content">
 
         <div class="filling">
             <% dataNewRecommendations.forEach((recommendation) => { %>
-            <% const picture = 'data:image/png;base64,' + recommendation.picture; %>
+            <% const picture = base64 + recommendation.picture; %>
             <div class="card">
                 <div class="description">
                     <h3 class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, et!</h3>
@@ -49,7 +50,7 @@
 
         <div class="evaluateds">
             <% dataEvaluatedUsers.forEach((user) => { %>
-            <% const picture = 'data:image/png;base64,' + user.avatar; %>
+            <% const picture = base64 + user.avatar; %>
             <% const name = user.name + ' ' + user.surname %>
             <div class="user_evaluated" id="<%= user.uid %>">
                 <img src="<%= picture %>"  alt="">
