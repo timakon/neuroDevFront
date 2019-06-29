@@ -1,0 +1,24 @@
+{
+  "name": "lissa_alert_front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/javascript/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timakon/neuroDevFront.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timakon/neuroDevFront/issues"
+  },
+  "homepage": "https://github.com/timakon/neuroDevFront#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
