@@ -29,12 +29,20 @@ main{
     color: #fff;
     font-size: 20px;
 }
+
 .avatar > img{
     padding: 10px;
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
+#avatar{
+    display: none;
+}
+#avatar:checked {
+    background: red;
+}
+
 .content{
     height: 92vh;
     width: 100%;
