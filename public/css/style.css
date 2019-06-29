@@ -120,6 +120,7 @@ main{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    cursor: pointer;
 }
 .user_evaluated>img{
     height: 40px;
@@ -219,8 +220,10 @@ input[type=range]:focus::-ms-fill-upper {
     background: #367ebd;
 }
 .sidebar{
-    width: 1200px;
+    width: 0;
     height: 100%;
+    transition: .6s;
+    overflow: hidden;
 }
 .sidebarForm{
     height: 100%;
@@ -235,8 +238,10 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 10px 20px 10px 20px ;
     border-radius:10px;
     color:#fff;
-    font-size:20px;
+    font-size: 20px;
+    cursor: pointer;
     transform: translateX(-50%);
+    margin-top: -40px;
 }
 .submitButton:hover{
     background-color: #7282ab;
