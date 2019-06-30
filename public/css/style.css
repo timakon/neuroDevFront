@@ -165,8 +165,8 @@ main{
     margin-left: 20px;
     cursor: pointer;
 }
-.user_evaluateds:hover, .user_evaluateds:focus{
-     border-bottom:1px solid rgba(0,0,0,0.20); ;
+.checked{
+     border-bottom:1px solid rgba(0,0,0,0.20);
  }
 .user_evaluated>img{
     height: 40px;

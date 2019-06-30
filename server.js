@@ -35,7 +35,6 @@ fetch(`http://${serverIp}/recommendation/new/${myId}`, {mode: 'cors'})
 fetch(`http://${serverIp}/user/get/${myId}`, {mode: 'cors'})
     .then((response) => response.json())
     .then((response) => {
-        console.log(response.message);
         dataUserInfo = response.message;
     })
     .catch((error) => {

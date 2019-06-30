@@ -8,7 +8,7 @@ let check = false;
 let uid;
 let uidToServer;
 $(document).on('click','.user_evaluated',function (e) {
-
+    $(e.currentTarget).addClass('checked').siblings().removeClass('checked');
     if (check===false){
         uid = $(e.currentTarget).attr('id');
         $('.sidebar').css('width', '40%');
@@ -44,7 +44,6 @@ $(document).on('click','.submitButton',function (e) {
     trueData['date'] = year + '-' + month + '-' + day;
 
     const dataJson = JSON.stringify(trueData);
-    console.log(dataJson);
     fetch(`http://${serverIp}/eval/send/`, {
         mode: 'cors',
         method: 'post',
