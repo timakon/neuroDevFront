@@ -55,7 +55,7 @@ main{
     display: flex;
     flex-flow: row wrap;
     width: 80%;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items:stretch;
     margin: 20px 10px 0 auto;
 }
@@ -70,15 +70,18 @@ main{
     margin: 20px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 20px;
 }
 .map{
     height: 80%;
     transition: 0.5s;
     cursor: pointer;
+    overflow: hidden;
 }
 .map > img{
     width: 100%;
-    height: 100%;
+    border-radius: 20px;
 }
 .description{
     padding: 10px;
@@ -86,10 +89,12 @@ main{
     background: #b5c9d8;
     transition: 0.5s;
     overflow: hidden;
+    border-radius: 0  0 20px 20px;
 }
 .description:hover{
     height: 400px;
     transition: 0.5s;
+    border-radius: 20px;
 }
 .description:hover + .map {
     opacity: 0;
@@ -143,7 +148,6 @@ main{
 .paramSlider > h3{
     font-family: 'Montserrat', sans-serif;
 }
-
 input[type=range] {
     -webkit-appearance: none;
     margin: 18px 0;
@@ -154,15 +158,16 @@ input[type=range]:focus {
 }
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 5px;
+    height: 3px;
     cursor: pointer;
     animate: 0.2s;
     background: #586994;
     border: none;
 }
 input[type=range]::-webkit-slider-thumb {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
+    margin: -1px;
     border-radius: 50%;
     background: #7d869c;
     cursor: pointer;
@@ -174,7 +179,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 input[type=range]::-moz-range-track {
     width: 100%;
-    height: 5px;
+    height: 3px;
+    margin:10px;
     cursor: pointer;
     animate: 0.2s;
     background: #586994;
@@ -182,42 +188,12 @@ input[type=range]::-moz-range-track {
 }
 input[type=range]::-moz-range-thumb {
     border: none;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
+    margin: -1px;
     border-radius: 50%;
     background: #7d869c;
     cursor: pointer;
-}
-input[type=range]::-ms-track {
-    width: 100%;
-    height: 5px;
-    cursor: pointer;
-    animate: 0.2s;
-    background: #586994;
-    border: none;
-    color: #586994;
-}
-input[type=range]::-ms-fill-lower {
-    background: #2a6495;
-    border: none;
-}
-input[type=range]::-ms-fill-upper {
-    background: #3071a9;
-    border: none;
-}
-input[type=range]::-ms-thumb {
-    border: none;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    background: #7d869c;
-    cursor: pointer;
-}
-input[type=range]:focus::-ms-fill-lower {
-    background: #3071a9;
-}
-input[type=range]:focus::-ms-fill-upper {
-    background: #367ebd;
 }
 .sidebar{
     width: 0;

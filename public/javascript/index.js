@@ -9,7 +9,7 @@ let uid;
 let uidToServer = document.getElementsByClassName('uidToServer');
 $(document).on('click','.user_evaluated',function (e) {
 
-;    if(check===false){
+    if(check===false){
        uid = $(e.currentTarget).attr('id');
        $('.sidebar').css('width', '40%');
         $('.slider').val('0');
@@ -26,6 +26,6 @@ $(document).on('click','.user_evaluated',function (e) {
     $(document).on('click','.submitButton',function (e) {
         e.preventDefault();
         uidToServer = uid;         //uidToServer id кнопки
-        $(`#${uid}`).remove()
+        $(`#${uid}`).remove();
         $('.sidebar').css('width', '0');
-    })
+    });
