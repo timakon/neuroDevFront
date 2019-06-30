@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 100;
 }
 html,body{
     width: 100%;
     height: 100%;
+    background: #f7f7f2;
 }
 main{
      height: 92vh;
@@ -17,8 +18,7 @@ main{
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    background: #92bedf;
-    margin: 0 0 20px 0;
+    background: #b7cece;
     flex: 0 0 auto;
 }
 .navigation div {
@@ -30,7 +30,6 @@ main{
     color: #fff;
     font-size: 20px;
 }
-
 .avatar > img{
     padding: 10px;
     height: 40px;
@@ -43,7 +42,6 @@ main{
 #avatar:checked {
     background: red;
 }
-
 .content{
     height: 92vh;
     width: 100%;
@@ -57,7 +55,6 @@ main{
     width: 80%;
     justify-content: flex-start;
     align-items:stretch;
-    margin: 20px 10px 0 auto;
 }
 .card{
     text-align: left;
@@ -66,12 +63,12 @@ main{
     justify-content: flex-end;
     width:320px;
     height: 320px;
-    border: 1px solid #92bedf;
+    border: 1px solid #a7b0b5;
     margin: 20px;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius: 20px;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 .map{
     height: 80%;
@@ -85,8 +82,8 @@ main{
 }
 .description{
     padding: 10px;
-    height: 24%;
-    background: #b5c9d8;
+    height: 23%;
+    background: #c2c9cc;
     transition: 0.5s;
     overflow: hidden;
     border-radius: 0  0 20px 20px;
@@ -109,22 +106,33 @@ main{
     display: none;
     transition: 0.5s;
 }
+.description_text{
+    padding-right: 5px;
+    padding-left: 5px;
+}
 .evaluateds{
     display: flex;
     height: 90%;
-    margin: 20px auto 0;
-    width: 20%;
+    width: 25%;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
+    border-left: 1px solid rgba(0,0,0,0.20);
+    border-right: 1px solid rgba(0,0,0,0.20);
 }
 .user_evaluated{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
     cursor: pointer;
 }
+.user_evaluateds:hover, .user_evaluateds:focus{
+     border-bottom:1px solid rgba(0,0,0,0.20); ;
+ }
 .user_evaluated>img{
     height: 40px;
     width: 40px;
@@ -133,6 +141,8 @@ main{
 .name_user_evaluated{
     padding: 10px;
     max-width: 30vw;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 20px;
 }
 .params{
     display: flex;flex-wrap: wrap;
@@ -146,7 +156,7 @@ main{
     margin: 10px;
 }
 .paramSlider > h3{
-    font-family: 'Montserrat', sans-serif;
+    font-weight:100;
 }
 input[type=range] {
     -webkit-appearance: none;
@@ -161,7 +171,7 @@ input[type=range]::-webkit-slider-runnable-track {
     height: 3px;
     cursor: pointer;
     animate: 0.2s;
-    background: #586994;
+    background: #dbd8b3;
     border: none;
 }
 input[type=range]::-webkit-slider-thumb {
@@ -169,13 +179,10 @@ input[type=range]::-webkit-slider-thumb {
     width: 20px;
     margin: -1px;
     border-radius: 50%;
-    background: #7d869c;
+    background: #b7cece;
     cursor: pointer;
     -webkit-appearance: none;
     transform: translateY(-35%);
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #586994;
 }
 input[type=range]::-moz-range-track {
     width: 100%;
@@ -209,14 +216,20 @@ input[type=range]::-moz-range-thumb {
     align-items: center;
 }
 .submitButton{
-    background-color: #596994;
-    border:1px solid #586994;
-    padding: 10px 20px 10px 20px ;
-    border-radius:10px;
-    color:#fff;
-    font-size: 20px;
-    cursor: pointer;
-    transform: translateX(-50%);
+    position: relative;
+    display: block;
+    margin: 30px;
+    width: 150px;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #2ecc71;
+    color: #ecf0f1;
+    transition: background-color .3s;
+    transform: translateX(-18%);
+    padding: 12px 24px;
 }
 .submitButton:hover{
     background-color: #7282ab;
