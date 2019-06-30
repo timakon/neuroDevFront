@@ -21,16 +21,19 @@
         <% const userAvatar = base64 + dataUserInfo.avatar %>
         <div class="name"><%= myName %></div>
         <input type="checkbox" id="avatar">
+        <ul class="drop_down_menu">
+            <li class="drop_down_menu_li"><span class="drop_down_menu_href">Age</span></li>
+            <li class="drop_down_menu_li"><span class="drop_down_menu_href">E-mail</span></li>
+            <li class="drop_down_menu_li"><a class="drop_down_menu_href" href="#">Get premium</a></li>
+            <li class="drop_down_menu_li"><a class="drop_down_menu_href" href="#">Settings</a></li>
+            <li class="drop_down_menu_li"><a class="drop_down_menu_href" href="#">Sing out</a></li>
+        </ul>
         <label for="avatar" class="avatar">
             <img src="<%= userAvatar %>" alt="">
         </label>
     </div>
 </header>
-<!--<ul class="drop_down_menu">-->
-<!--<li>1</li>-->
-<!--<li>2</li>-->
-<!--<li>3</li>-->
-<!--</ul>-->
+
 <main>
     <div class="content">
 
@@ -40,7 +43,6 @@
             <div class="card">
                 <div class="description">
                     <p class="description_text"> <%= recommendation.text %></p>
-                    <!--TODO Поставить ограниечение на ввод текста в "<p class=description_text></p>", максимум 600 символов-->
                 </div>
                 <div class="map">
                     <img src="<%= picture %>" alt="">
