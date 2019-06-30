@@ -37,7 +37,6 @@
             <% const picture = base64 + recommendation.picture; %>
             <div class="card">
                 <div class="description">
-                    <h3 class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, et!</h3>
                     <p class="description_text"> <%= recommendation.text %></p>
                     <!--TODO Поставить ограниечение на ввод текста в "<p class=description_text></p>", максимум 600 символов-->
                 </div>
@@ -116,6 +115,7 @@
                         <input class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
+                    <input type="hidden" class="uidToServer">
                 </div>
                 <input type="submit" value="Send" class="submitButton">
             </form>

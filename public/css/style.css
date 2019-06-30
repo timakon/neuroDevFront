@@ -72,7 +72,7 @@ main{
     font-family: 'Roboto', sans-serif;
 }
 .map{
-    height: 60%;
+    height: 80%;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -82,13 +82,10 @@ main{
 }
 .description{
     padding: 10px;
-    height: 40%;
+    height: 24%;
     background: #b5c9d8;
     transition: 0.5s;
     overflow: hidden;
-}
-.description_text{
-    display: none;
 }
 .description:hover{
     height: 400px;
@@ -138,11 +135,13 @@ main{
     width: 100%;
     position: relative;
 }
-
 .paramSlider{
     height: 100px;
     width: 40%;
     margin: 10px;
+}
+.paramSlider > h3{
+    font-family: 'Montserrat', sans-serif;
 }
 
 input[type=range] {
@@ -242,7 +241,6 @@ input[type=range]:focus::-ms-fill-upper {
     font-size: 20px;
     cursor: pointer;
     transform: translateX(-50%);
-    margin-top: -40px;
 }
 .submitButton:hover{
     background-color: #7282ab;
