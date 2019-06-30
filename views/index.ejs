@@ -16,10 +16,13 @@
 <body>
 <header class="navigation">
     <div>
-        <div class="name">User Name</div>
+        <% const base64 = 'data:image/png;base64,' %>
+        <% const myName = dataUserInfo.name + ' ' + dataUserInfo.surname %>
+        <% const userAvatar = base64 + dataUserInfo.avatar %>
+        <div class="name"><%= myName %></div>
         <input type="checkbox" id="avatar">
         <label for="avatar" class="avatar">
-            <img src="public/man-user.png" alt="">
+            <img src="<%= userAvatar %>" alt="">
         </label>
     </div>
 </header>
@@ -29,7 +32,6 @@
 <!--<li>3</li>-->
 <!--</ul>-->
 <main>
-    <% const base64 = 'data:image/png;base64,' %>
     <div class="content">
 
         <div class="filling">
@@ -62,59 +64,59 @@
                 <div class="params">
                     <div class="paramSlider">
                         <h3>Partnership</h3>
-                        <input class="slider" type="range" min='0' max='10' value="0">
+                        <input name="partnership" class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
                     <div class="paramSlider">
                         <h3>Joint</h3>
-                        <input class="slider" type="range" min='0' max='10' value="0">
+                        <input name="joint" class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
 
                     <div class="paramSlider">
                         <h3>Responsibility</h3>
-                        <input class="slider" type="range" min='0' max='10' value="0">
+                        <input name="responsibility" class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
                     <div class="paramSlider">
                         <h3>Kindness</h3>
-                        <input class="slider" type="range" min='0' max='10' value="0">
+                        <input name="kindness" class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
 
                     <div class="paramSlider">
                         <h3>Trust</h3>
-                        <input class="slider" type="range" min='0' max='10' value="0">
+                        <input name="trust" class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
                     <div class="paramSlider">
                         <h3>Anger</h3>
-                        <input class="slider" type="range" min='0' max='10' value="0">
+                        <input name="anger" class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
 
                     <div class="paramSlider">
                         <h3>Irritability</h3>
-                        <input class="slider" type="range" min='0' max='10' value="0">
+                        <input name="irritability" class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
                     <div class="paramSlider">
                         <h3>Compliance</h3>
-                        <input class="slider" type="range" min='0' max='10' value="0">
+                        <input name="compliance" class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
 
                     <div class="paramSlider">
                         <h3>Sociopathy</h3>
-                        <input class="slider" type="range" min='0' max='10' value="0">
+                        <input name="sociopathy" class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
                     <div class="paramSlider">
                         <h3>Isolation</h3>
-                        <input class="slider" type="range" min='0' max='10' value="0">
+                        <input name="isolation" class="slider" type="range" min='0' max='10' value="0">
                         <p class="value">0</p>
                     </div>
-                    <input type="hidden" class="uidToServer">
+                    <input name="uid" type="hidden" class="uidToServer">
                 </div>
                 <input type="submit" value="Send" class="submitButton">
             </form>
