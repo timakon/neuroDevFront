@@ -20,7 +20,7 @@
   "homepage": "https://github.com/timakon/neuroDevFront#readme",
   "dependencies": {
     "ejs": "^2.6.2",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "ion-rangeslider": "^2.3.0",
     "node-fetch": "^2.6.0",
     "nodemon": "^1.19.1"
